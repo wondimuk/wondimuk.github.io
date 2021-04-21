@@ -1,7 +1,42 @@
-title{
-    font-size: 16px;
+body{
+    background-color:lightsteelblue;
 }
-h1{
-    font-size: 18px;
-    font-family: 'Times New Roman','Arial Narrow', Times, serif;
+header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    color:sienna;
+    font-weight: bold;
 }
+span{
+    color:seagreen;
+    font-style:italic;
+    font-weight: bold;
+}
+/* Headers */
+.hdr{
+    font-size: 25px;
+    color:sienna
+}
+a:hover{color:red;font-size: 20px;}
+a:active{font-style: italic;}
+
+  .column {
+    float: left;
+    /* width: 100%;
+    padding: 5px;*/
+  } 
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+content: "";
+    clear: both;
+    display:table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    /* flex: 25%; */
+    padding: 1px;
+  }
