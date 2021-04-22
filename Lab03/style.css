@@ -29,34 +29,23 @@ html {
 	  display:inline-block;
 	  padding: 0px 10px;
 	}
-   
-	.dropprof,.dropdowncs {
-	  display: none;
-	  position: absolute;
-	  background-color: #f1f1f1;
-	  min-width: 160px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	}
+	/* .item1 { grid-area: header; }
+	.item2 { grid-area: menu; }
+	.item3 { grid-area: main; }
+	.item4 { grid-area: right; }
+	.item5 { grid-area: footer; }
 	
-	.dropdownprof a,.dropdowncs a {
-	  color: black;
-	  padding: 12px 16px;
-	  text-decoration: none;
-	  display: block;
-	}
-	.dropprof a:hover {background-color: #ddd;}
-	.dropprof:hover {display: block;}
-	.dropprof:hover {background-color: #3e8e41;}
-  
-	.dropdowncs a:hover {background-color: #ddd;}
-	.dropdowncourses:hover .dropdowncs {display: block;}
-	.dropdowncourses:hover .dropcs {background-color: #3e8e41;}
-  
-	.dropprof,.dropdowncourses {
-	  position: relative;
-	  display: inline-block;
-	}
+	.grid-container {
+	  display: grid;
+	  grid-template-areas:
+		'header header header header header header'
+		'menu main main main right right'
+		'menu footer footer footer footer footer';
+	  grid-gap: 10px;
+	  background-color: #2196F3;
+	  padding: 10px;
+	} */
+
 
 body { 
 	font: 75% georgia, sans-serif;
@@ -104,10 +93,10 @@ abbr {
 	position: absolute;
 	}
 
-.intro { 
+/* .intro { 
 	min-width: 470px;
 	width: 100%;
-	}
+	} */
 
 header h1 { 
 	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top right;
