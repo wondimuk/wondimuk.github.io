@@ -99,7 +99,7 @@ abbr {
 /* specific divs */
 .page-wrapper { 
 	background: url(https://upload.wikimedia.org/wikipedia/en/1/14/Maharishi_International_University_logo_1.png) no-repeat top left ; 
-	margin-top: 150;
+	margin-top: 0;
 	padding: 0 250px 0 100px;  
 	position: absolute;
 	}
