@@ -17,9 +17,11 @@ span{
     font-size: 25px;
     color:sienna
 }
-a:hover{color:red;font-size: 20px;}
+/* Movies */
+.myLinkToMovies:hover{color:red;font-size: 20px;}
 a:active{font-style: italic;}
 
+/*  */
   .column {
     float: left;
     /* width: 100%;
