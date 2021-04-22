@@ -23,14 +23,14 @@ html {
 		font-weight: bold;
 		list-style-type: none;
 		color: white;
-		margin-left: 150px;
+		margin-left: 10px;
 	}
 	.menu li{
 	  display:inline-block;
 	  padding: 0px 10px;
 	}
    
-	.dropdownprof,.dropdowncs {
+	.dropprof,.dropdowncs {
 	  display: none;
 	  position: absolute;
 	  background-color: #f1f1f1;
@@ -45,15 +45,15 @@ html {
 	  text-decoration: none;
 	  display: block;
 	}
-	.dropdownprof a:hover {background-color: #ddd;}
-	.dropdownprofile:hover .dropdownprof {display: block;}
-	.dropdownprofile:hover .dropprof {background-color: #3e8e41;}
+	.dropprof a:hover {background-color: #ddd;}
+	.dropprof:hover {display: block;}
+	.dropprof:hover {background-color: #3e8e41;}
   
 	.dropdowncs a:hover {background-color: #ddd;}
 	.dropdowncourses:hover .dropdowncs {display: block;}
 	.dropdowncourses:hover .dropcs {background-color: #3e8e41;}
   
-	.dropdownprofile,.dropdowncourses {
+	.dropprof,.dropdowncourses {
 	  position: relative;
 	  display: inline-block;
 	}
@@ -98,7 +98,7 @@ abbr {
 
 /* specific divs */
 .page-wrapper { 
-	background: url(https://upload.wikimedia.org/wikipedia/en/1/14/Maharishi_International_University_logo_1.png) no-repeat top left ; 
+	/* background: url(https://upload.wikimedia.org/wikipedia/en/1/14/Maharishi_International_University_logo_1.png) no-repeat top left ;  */
 	margin-top: 0;
 	padding: 0 250px 0 100px;  
 	position: absolute;
@@ -143,7 +143,7 @@ header {
 	margin: 20px 20px 20px 10px; 
 	width: 160px; 
 	float: left;
-	color:darkgray;
+	background-color:darkgray;
 	}
 .summary p {
 	font: italic 1.1em/2.2 georgia; 
