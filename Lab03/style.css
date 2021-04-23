@@ -1,236 +1,71 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-
-	.menu{
-		border: 3px solid red;
-		border-radius: 12px;
-		background-color: darkblue;
-		padding: 15px;
-		font-size: 16px;
-		font-weight: bold;
-		list-style-type: none;
-		color: white;
-		margin-left: 10px;
-	}
-	.menu li{
-	  display:inline-block;
-	  padding: 0px 10px;
-	}
-	/* .item1 { grid-area: header; }
-	.item2 { grid-area: menu; }
-	.item3 { grid-area: main; }
-	.item4 { grid-area: right; }
-	.item5 { grid-area: footer; }
-	
-	.grid-container {
-	  display: grid;
-	  grid-template-areas:
-		'header header header header header header'
-		'menu main main main right right'
-		'menu footer footer footer footer footer';
-	  grid-gap: 10px;
-	  background-color: #2196F3;
-	  padding: 10px;
-	} */
-
-
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #213112; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	/* display: flex; */
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
+.grid-container {
+	display: grid;
+	grid-template: 150px / auto auto auto;
+	grid-gap: 10px;
+	background-color: #585c5f;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 10px;
+  }
+  
+  .hdr{
+	grid-column: 1/4;
+	float: center;
+	text-align: center;
+	padding: 2fr;
+	font-size: 20px;
+	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
+	margin-bottom: 2fr;
+	border-style: groove;
+	color: rgb(201, 173, 173);
+	background-color: rgb(78, 82, 124);
+  }
+  .menu li{
+	display:inline-block;
+	padding: 10px;
+	list-style-type: none;
+  }
+.left-side{
+	grid-column: 1/2;
+	float: left;
+	padding: 50px 0px 0px 0px;
+	width: 200px;
+	margin:10px;
+}
+.content {
+	grid-column: 2/3;
+	clear: both; 
+	padding: 50px;
+	float: left;
+}
 h3 { 
 	font: italic normal 1.4em georgia, sans-serif;
 	letter-spacing: 1px; 
 	margin-bottom: 0; 
-	color: #7D775C;
+	color: #e9e1c1;
 	}
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
-	color: #B7A5DF;
+	color:rgb(14, 56, 56);
 	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
+	a:hover{
+		color: red;
 	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	font-size: 20px;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-/* specific divs */
-.page-wrapper { 
-	/* background: url(https://upload.wikimedia.org/wikipedia/en/1/14/Maharishi_International_University_logo_1.png) no-repeat top left ;  */
-	margin-top: 0;
-	padding: 0 250px 0 100px;  
-	position: absolute;
-	}
-
-/* .intro { 
-	min-width: 470px;
-	width: 100%;
-	} */
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top right;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top right; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 40px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
-}
-
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	background-color:darkgray;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-footer {
-	text-align: center; 
-	clear: both;
-	padding: 0.5em 10%;
-	color: #fff;
-	background: #134347;
-	text-align: center;
-	font-size: 15px;
-}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
+.right-side{
+	grid-column: 3/4;
+	width: 200px;
+	padding: 3fr;
+	margin:10px;
+	border-style: groove;
 	top: 0; 
 	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 300px; 
-	margin-right: 100px;
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top right; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top right; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top right; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #4d5046;
-	}
-.sidebar li a:visited {
-	color: #dbd4af;
-	}
-
-
-.extra1 {
-	/* background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;  */
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+}
+.footer{
+	grid-column: 1/4;
+	margin:20px;
+	text-align: center;
+	clear: both;
+	padding: 0.5em 10%;
+	background-color: #7cddac;
+	font-size: 16px;
+}
