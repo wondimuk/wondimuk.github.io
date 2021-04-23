@@ -1,0 +1,70 @@
+.title {
+  background-color: rgb(85, 156, 156);
+  font-size: 20px;
+  height: 40px;
+  color: #fff;
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+#more-action{
+position: absolute;
+left:300px;
+top:10px;
+
+}
+#more-action>select{
+  background-color: rgb(85, 156, 156);
+  color: #fff;
+}
+
+.main {
+  display: flex;
+}
+span{
+  color:red;
+}
+.main div label {
+  width: 200px;
+    margin-left: 10px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;;
+}
+input{
+  width: 200px;
+
+}
+textarea{
+  width: 200px;
+  height: 50px;
+
+}
+input[type="checkbox"]{
+  width: fit-content;
+}
+.paymentMode div{
+  position: relative;
+  left: 200px;
+}
+input{
+  left:200px;
+  
+}
+.column div{
+  margin:10px;
+  padding-bottom:5px;
+}
+
+.submit-btn{
+  position: fixed;
+  bottom: 0px;
+  width: 98%;
+  height: 30px;
+  background-color: gray;
+  padding: 15px;
+  text-align: center;
+}
+
+label u{
+
+  font-weight: lighter;
+}

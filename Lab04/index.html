@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+   
+    <link href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="title">Workshop registration </div>  <p id="more-action"><select><Option>more setting</Option></select> </p>
+    <p ><u>Registor now while seats are available!</u></p>
+    <form class="main">
+      
+   
+      <div class="column">
+        <br>
+        <div>
+          <label>First Name<span>&star; </span></label>  <input class="first-name" type="text" required />
+        </div>
+        <div>
+          <label>Last Name<span>&star; </span></label>   <input class="last-name" type="text" required/>
+        </div>
+        <div>
+        <label>Company/Institution <span>&star; </span></label><input class="institution" type="text" required/>
+        </div>
+        <div>
+        <label class="-lbl">Address<span>&star; </span></label>   <textarea class="address" type="text" required></textarea> </div>
+        <div>
+        <label>City </label>        <input class="city" type="text" />
+          
+        </div>
+        <div>
+        <label>email</label>    <input class="last-name" type="text" />
+          
+        </div>
+        <div>
+        <label>phone number </label> <input class="first-name" type="text" />
+          
+        </div>
+        <div>
+          <label>state </label>  <select name="state">
+            <option selected>--select--</option>
+            <option>IOWA</option>
+            <option>DC</option>
+          </select>
+        </div>
+        
+        <div>
+          <label>Country </label>      <select name="country">
+            <option disabled selected>--select--</option>
+            <option>USA</option>
+            <option>Germany</option>
+            <option>Ethiopia</option>
+          </select>
+        </div>
+       
+      </div>
+     <div class="column">
+       <label><u>Lunch</u></label>
+      <div> <label  class="meal-lbl">Meal Preference</label>
+      <select name="meal">
+        <option selected>Vegetarian </option>
+        <option>Non Vegetarian</option>
+      </select></div><label><u>payment Details</u></label>
+      <div class="paymentMode">
+        <label>payment mode </label>
+        <div> <input  class="cash" type="checkbox" name="cash" /> Cash </div>
+          <div><input class="cheque" type="checkbox" name="cheque"  /> Cheque</div>
+            <div><input class ="demand" type="checkbox" name="demand"  /> Demand Draft </div>
+        
+        <label>DD/Cheque No. </label><input  class="ChequeNo" type="text" />      </div>
+        <div> <label>Drawn on(Bank Name) </label><input class="Bank-name" type="text" /> </div>
+          <div><label>Payable at </label><input class="Payable" type="text" /> </div>
+
+      </div>  
+    </form>
+    <div class="submit-btn">
+      <input type="submit" />
+    <input type="reset"/>
+    </div>
+  </body>
+</html>
