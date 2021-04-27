@@ -1,8 +1,9 @@
-
 function printNumbers(from,to){
-    while(from<=to){
+setInterval(()=>{
+    if(from<=to){
         console.log(from);
         from++;
     }
-}
-setInterval(printNumbers,1000,5,7);
+},1000)};
+printNumbers(5,7);
+
