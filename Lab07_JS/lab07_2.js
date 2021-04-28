@@ -4,9 +4,9 @@ let group = {
 
     showList: function() {
         console.log(this);
-        this.students.forEach((student)=>{
+        this.students.forEach(function (student){
             console.log(this.title + ": " + student);
-        });
+        }.bind(group));
     }
 };
-group.showList.bind(group)();
+group.showList();
