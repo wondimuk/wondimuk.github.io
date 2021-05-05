@@ -34,7 +34,7 @@
     }
 
     function changeSize(){
-        var size = document.getElementById("size_select");
+        var size = document.getElementById("fontsize");
         var size_option = size.options[size.selectedIndex].value;
         document.getElementById("textArea").style.fontSize = size_option;
     }
