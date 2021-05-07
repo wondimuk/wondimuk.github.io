@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <link href="style.css" rel="stylesheet" media="screen">
+    <link href="actions.js" rel="text/javascript" media="screen">
+    <title>WAP Calculator </title>
+    <meta aria-roledescription="WAP calculator, Lab assignment">
+</head>
+
+<body>
+<h1 id="hdr"> WAP Calculator</h1>
+<form method="POST" action="/calculator" >
+    <div id="add">
+        <input type="text" name="addFirstNum" pattern="[0-9]">
+        <label>+</label>
+        <input type="text" name="addSecondNum" pattern="[0-9]">
+    </div>
+    <div id="multiply">
+        <input type="text" name="multFirstNum" pattern="[0-9]">
+        <label>*</label>
+        <input type="text" name="multSecondNum" pattern="[0-9]">
+    </div>
+    <div id="btn">
+        <input type="submit" value="submit">
+    </div>
+</form>
+</body>
+</html>
