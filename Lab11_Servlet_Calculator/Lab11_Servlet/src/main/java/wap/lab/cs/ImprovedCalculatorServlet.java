@@ -13,16 +13,16 @@ public class ImprovedCalculatorServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
     }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         PrintWriter out = resp.getWriter();
+
         try {
             String firstAddNumber= req.getParameter("frstNum");
             String secondAddNumber = req.getParameter("sndNum");
-
             String firstMultNumber = req.getParameter("trdNum");
             String secondMultNumber = req.getParameter("fthNum");
 
@@ -31,9 +31,9 @@ public class ImprovedCalculatorServlet extends HttpServlet {
 
             resp.setContentType("text/html;charset=UTF-8");
             out.println();
-            out.println("<link href=\"style.css\" rel=\"stylesheet\" media=\"screen>\"");
+            out.println("<head><link href=\"style.css\" rel=\"stylesheet\" media=\"screen>\"");
             out.println("<link href=\"actions.js\" rel=\"text/javascript\" media=\"screen\">");
-            out.println("<title>WAP Modified Calculator </title>");
+            out.println("<title>WAP Modified Calculator </title></head>");
             if (firstAddNumber != " " && secondAddNumber != " ") {
                 addRes = Integer.valueOf(firstAddNumber) + Integer.valueOf(secondAddNumber);
                 out.println(" <div> <input name=\"num1\" value="+firstAddNumber+"> + <input name=\"num2\" value="+secondAddNumber+"> = <input name=\"sum\" value="+addRes+" readonly> </div>");
@@ -45,9 +45,7 @@ public class ImprovedCalculatorServlet extends HttpServlet {
             }
             if (firstMultNumber != " " && secondMultNumber != " ") {
                 multRes = Integer.valueOf(firstMultNumber) * Integer.valueOf(secondMultNumber);
-
                 out.println("<div><input name=\"num3\" value="+firstMultNumber+"> * <input name=\"num4\" value="+secondMultNumber+"> = <input name=\"product\" value="+multRes+" readonly> </div>");
-
             }
             else{
                 out.println("<input name=\"num3\"> * <input name=\"num4\"> = <input name=\"product\" readonly>");
@@ -55,7 +53,6 @@ public class ImprovedCalculatorServlet extends HttpServlet {
             out.print("<br/>");
             out.print(" <input type=\"submit\" value=\"Submit\" >");
             out.print("</form>");
-
         }catch (Exception e){
             out.print("Something is wrong...");
         }
