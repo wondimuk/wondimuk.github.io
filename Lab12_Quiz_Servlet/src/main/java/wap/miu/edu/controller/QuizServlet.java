@@ -1,4 +1,5 @@
 package wap.miu.edu.controller;
+import com.sun.net.httpserver.HttpContext;
 import wap.miu.edu.model.Quiz;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,6 +21,10 @@ public class QuizServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
+//        String contextName = req.getServletContext().getServletContextName();
+//        String contextInfo = req.getServletContext().getServerInfo();
+//        String contextParam = req.getServletContext().getInitParameter("aa");
+
         Quiz quiz;
         if(session.getAttribute("quiz")==null){
                 quiz = new Quiz();

@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Lab14_Beer_CustomTag_Exploaded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Lab14_Beer_CustomTag_Exploaded</output-path>
+    <root id="root" />
+  </artifact>
+</component>
