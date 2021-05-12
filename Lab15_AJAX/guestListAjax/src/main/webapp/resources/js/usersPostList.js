@@ -3,17 +3,12 @@ $(function() {
 });
 
 function userPostsList() {
-    console.log("test")
-    var id = 1;
     $.ajax("http://jsonplaceholder.typicode.com/posts?userId="+$("#uid").val(), {
 		"type": "get",
         "success":displayUserPosts,
         "error":showError,
     });
-        // .done(displayUserPosts);
     function showError(xhr,status,exception){
-        console.log(xhr)
-        console.log('test')
         $('#user').html(xhr+status+exception);
     }
 

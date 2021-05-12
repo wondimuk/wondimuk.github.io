@@ -5,8 +5,7 @@ $(function() {
 function userPostsList() {
     console.log("test")
     var id = 1;
-    $.ajax("http://jsonplaceholder.typicode.com/posts?userId="+$("#uid").val(), {
-		"type": "get",
+    $.get("http://jsonplaceholder.typicode.com/posts?userId="+$("#uid").val(), {
         "success":displayUserPosts,
         "error":showError,
     });

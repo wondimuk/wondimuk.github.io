@@ -5,7 +5,7 @@
     </head>
     <body>
 <%--      <a href='GuessServlet.ajax'>start the Guest List application</a>--%>
-    <a href='guest'>start the Guest List application</a> <br/>
-    <a href="posts.jsp"> Show List</a>
+    <a href='guest'>Lab 15.1 start the Guest List application</a> <br/>
+    <a href="posts.jsp"> Lab 15.2 Show List</a>
     </body>
 </html>
